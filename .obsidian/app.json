@@ -1,0 +1,8 @@
+{
+  "userIgnoreFilters": [
+    "raw/",
+    "wiki/_templates/",
+    "launchagent/"
+  ],
+  "attachmentFolderPath": "raw/fetched"
+}

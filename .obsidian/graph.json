@@ -1,0 +1,32 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:wiki/entities",
+      "color": { "a": 1, "rgb": 4457562 }
+    },
+    {
+      "query": "path:wiki/concepts",
+      "color": { "a": 1, "rgb": 14277081 }
+    },
+    {
+      "query": "path:wiki/comparisons",
+      "color": { "a": 1, "rgb": 16744272 }
+    },
+    {
+      "query": "path:wiki/summaries",
+      "color": { "a": 1, "rgb": 8947848 }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.2,
+  "lineSizeMultiplier": 1
+}
