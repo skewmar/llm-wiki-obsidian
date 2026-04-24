@@ -842,14 +842,14 @@ def main():
     else:
         print(f"  → {n} nodes, {e} edges across domains: {', '.join(_graph_cache['meta']['domains'])}")
 
-    url = f"http://localhost:{args.port}"
+    url = f"http://127.0.0.1:{args.port}"
     print(f"  → Serving at {url}  (Ctrl+C to stop)")
     print(f"  → Refresh graph after ingest: {url}/api/refresh\n")
 
     if not args.no_browser:
         threading.Timer(0.5, lambda: webbrowser.open(url)).start()
 
-    server = HTTPServer(("localhost", args.port), Handler)
+    server = HTTPServer(("127.0.0.1", args.port), Handler)
     try:
         server.serve_forever()
     except KeyboardInterrupt:
