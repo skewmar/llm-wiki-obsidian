@@ -43,6 +43,7 @@ claude                          # query via Claude Code
 | `python scripts/lint.py --generate` | Also draft top comparison pages |
 | `python scripts/watch.py` | Always-on: watch raw/ and auto-ingest on new files |
 | `python scripts/watch.py --fetch` | Same, but also runs fetch_links first |
+| `python scripts/serve.py` | Launch local graph visualization on localhost:5050 |
 
 ---
 

@@ -17,6 +17,34 @@ You drop sources → pipeline synthesizes wiki/ → graph view + Claude Code ans
 
 ---
 
+## Graph Visualization (localhost)
+
+In addition to Obsidian's built-in graph view, you can run a standalone web visualization:
+
+```bash
+python scripts/serve.py
+# Opens http://localhost:5050 in your browser automatically
+```
+
+What you get:
+- **Force-directed graph** — nodes pull toward connected neighbors, clusters emerge naturally
+- **Node colors** — blue = entities, purple = concepts, orange = comparisons, green = summaries
+- **Node size** — larger = more connections (hub nodes stand out)
+- **Click any node** — right panel shows description, all connected nodes, and file content
+- **Click a connection** in the detail panel to jump to that node
+- **Search bar** — highlights matching nodes by name, description, or domain
+- **Type filters** — toggle entities/concepts/comparisons/summaries on/off
+- **Zoom controls** — ⊡ to auto-fit the whole graph, + / − to zoom
+
+This is useful for sharing a snapshot with others (no Obsidian required) or for a browser-based view alongside Claude Code.
+
+After re-running `ingest.py`, hit `/api/refresh` to reload the graph without restarting:
+```
+http://localhost:5050/api/refresh
+```
+
+---
+
 ## Daily Workflow
 
 **Adding new sources:**
